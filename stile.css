@@ -73,3 +73,46 @@ body {
   text-align: center;
   background-color: #f3f3f3;
 }
+
+/*---Start Modulo 2---*/
+.games {
+  width: 70vw;
+  margin: auto;
+  border: 2px solid yellow;
+}
+
+.game-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.game-thumbnail {
+  width: 300px;
+  aspect-ratio: 1 / 1;
+  border: 2px solid red;
+}
+
+.game-thumbnail > a {
+ display: grid;
+ grid-template-columns: 1fr;
+ grid-template-rows: 1fr;
+
+ place-items: center;
+}
+
+.game-thumbnail > a > * {
+  grid-area: 1 /1;
+}
+
+.game-logo {
+  width: 50%;
+
+  z-index: 1;
+}
+
+.game-keyart {
+  z-index: -1;
+}
+/*---End Modulo 2---*/
