@@ -23,7 +23,8 @@ Electronic Arts Text
 }
 * {
   margin: 0;
-  font-family: "Electronic Arts Text", "Electronic Arts Display", Verdana, sans-serif;
+  font-family: "Electronic Arts Text", "Electronic Arts Display", Verdana,
+    sans-serif;
   font-size: 16px;
 }
 body {
@@ -85,20 +86,19 @@ button {
 }
 /*---Start Modulo 2---*/
 .games {
-  width: 70vw;
+  width: 950px;
+  max-width: 90vw;
   margin: auto;
   border: 2px solid yellow;
 }
 
 .game-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 1rem;
-  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .game-thumbnail {
-  width: 300px;
   aspect-ratio: 1 / 1;
   border: 2px solid red;
 
@@ -150,7 +150,7 @@ button {
 }
 
 .more-games-btn {
-margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .game-keyart {
