@@ -182,3 +182,60 @@ a:hover > .game-site {
   place-items: center;
 }
 /*---End Modulo 2---*/
+
+
+/*---footer---*/
+
+.section1 {
+  background-color: rgb(209, 226, 226);
+}
+
+.red-link {
+  color: red;
+  text-decoration: none;
+}
+
+hr {
+  color: black;
+}
+
+.terms {
+  padding: 30px;
+}
+
+.conversation {
+  color: black;
+  text-decoration: none;
+  padding: 30px;
+}
+
+.participate {
+  font-weight: bold;
+}
+
+
+
+.last-links{
+  width: 50%;
+}
+
+.actions {
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.agreements {
+  color: black;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+
