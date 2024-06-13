@@ -71,7 +71,7 @@ h6 {
 /*---Stili generali*/
 body {
   text-align: center;
-  background-color: #f3f3f3;
+  background-color: var(--white);
   color: var(--black);
 }
 
@@ -81,9 +81,24 @@ h2 {
   margin-bottom: 1rem;
 }
 
-button {
+.more-games-btn {
   padding: 0.75rem 1.5rem;
+  width: max-content;
+  border: 1px solid var(--black);
+  border-radius: 3px;
+  margin: auto;
 }
+
+.more-games-btn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.more-games-btn > a {
+  text-decoration: none;
+  color: var(--black);
+  pointer-events: none;
+}
+
 /*---Start Modulo 2---*/
 .games {
   width: 950px;
