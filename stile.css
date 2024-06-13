@@ -99,12 +99,54 @@ h2 {
   pointer-events: none;
 }
 
+/*---Start Secondo Menu---*/
+.second-menu {
+  position: absolute;
+  z-index: 3;
+
+  width: 300px;
+  max-width: 25vw;
+  height: 100%;
+
+  background-color: #ff4747;
+  padding: 2rem;
+}
+
+.second-menu-content {
+  border: 1px solid white;
+
+}
+
+.second-menu-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 2rem;
+}
+
+.second-menu-nav > span {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.second-menu-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.second-menu-items > div:first-of-type  {
+  grid-column: span 2;
+}
+
+/*---End Secondo Menu---*/
+
 /*---Start Modulo 2---*/
 .games {
   width: 950px;
   max-width: 90vw;
   margin: auto;
-  border: 2px solid yellow;
 }
 
 .game-list {
@@ -115,7 +157,6 @@ h2 {
 
 .game-thumbnail {
   aspect-ratio: 1 / 1;
-  border: 2px solid red;
 
   position: relative;
 }
