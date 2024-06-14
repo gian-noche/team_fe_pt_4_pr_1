@@ -186,50 +186,119 @@ a:hover > .game-site {
 
 /*---footer---*/
 
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
 .section1 {
-  background-color: rgb(209, 226, 226);
+  background-color: rgb(216, 231, 231);
+  padding-bottom: 70px;
 }
 
 .red-link {
   color: red;
   text-decoration: none;
+  font-size: 14px;
 }
 
 hr {
   color: black;
+  margin-left: 13%;
+  margin-right: 13%;
 }
 
 .terms {
-  padding: 30px;
+  padding: 40px;
+  font-size: 14px;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: left;
 }
 
 .conversation {
   color: black;
   text-decoration: none;
-  padding: 30px;
+  padding: 20px;
+}
+
+.firstLinks {
+  padding-top: 20px;
+  text-align: left;
+  margin-left: 11.5%;
+} 
+
+a:hover {
+  color: red;
 }
 
 .participate {
   font-weight: bold;
+  padding-left: 30px;
+  position: relative;
+  left: 910px;
+  top: -22px;
+}
+
+.section2 {
+  padding-top: 1px;
+}
+
+.logo {
+  position: relative;
+  left: 160px;
+  top: 60px;
 }
 
 
-
 .last-links{
-  width: 50%;
+  margin-left: 15%;
+  margin-right: 50%;
+  text-align: left;
+  padding-top: 3px;
 }
 
 .actions {
   color: black;
-  font-size: 16px;
+  font-size: 18px;
   text-decoration: none;
-  padding: 20px;
+  padding: 23px;
+}
+
+.actions:hover {
+  color:black;
+}
+
+.row1 {
+  padding-bottom: 30px;
+}
+
+.small_links {
+  padding top: 40px;
+  margin-left: 2%;
 }
 
 .agreements {
   color: black;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 16px; 
+  padding: 12px;
+}
+
+.agreements:hover {
+  color: black;
+}
+
+.close {
+  padding-top: 10px;
+  margin-left: 16.5%;
+  text-align: left;
+}
+
+.privacy {
+  position: relative;
+  left: 1100px;
+  bottom: 50px;
 }
 
 
