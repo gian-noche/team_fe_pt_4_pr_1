@@ -238,3 +238,220 @@ a:hover > .game-site {
   place-items: center;
 }
 /*---End Modulo 2---*/
+
+
+/*---footer---*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.section1 {
+  background-color: rgb(216, 231, 231);
+  padding-bottom: 60px;
+}
+
+.red-link {
+  color: red;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+hr {
+  color: black;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.terms {
+  font-size: 14px;
+  margin-left: 10%;
+  text-align: left;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.conversation {
+  color: black;
+  text-decoration: none;
+}
+
+.firstLinks {
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  white-space: nowrap;
+  width: 100%;
+} 
+
+.conversation:hover {
+  color: red;
+}
+
+/* Tooltip */
+
+
+#tooltip .tooltiptext {
+  visibility: hidden;
+  width: 20px;
+  background-color: rgb(70, 67, 67);
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 12px;
+  position: relative;
+  left: 10px;
+  top: 10px;
+}
+
+
+#tooltip:hover .tooltiptext {
+  visibility: visible;
+  display: inline;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+/* End Tooltip */
+
+.participate {
+  font-weight: bold;
+  position: relative;
+  right: 130px;
+  padding-left: 30px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+  padding-top: 10px;
+}
+
+.icon {
+  padding: 0.1px;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 4% 10%;
+}
+
+.left {
+  padding-left: 5px;
+  width: 60%;
+}
+
+.last-links{
+  margin-left: 4%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.actions {
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.actions:hover {
+  color:black;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  white-space: nowrap;
+}
+
+.row2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  padding-top: 25px;
+}
+
+
+.small_links {
+  padding-top: 40px;
+  padding-left: 27px;
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.Row1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Row2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Row3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.agreements {
+  color: black;
+  text-decoration: none;
+  font-size: 16px; 
+}
+
+.agreements:hover {
+  color: black;
+}
+
+.close {
+  padding-top: 10px;
+  padding-left: 27px;
+  text-align: left;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.butt {
+  padding: 20px 40px;
+}
+
+.lingua {
+  margin-left: 60px;
+}
+
+.priv {
+  padding-top: 140px;
+  padding-left: 220px;
+}
+
+
+
+
+
+
+
+
