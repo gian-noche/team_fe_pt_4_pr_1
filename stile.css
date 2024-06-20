@@ -81,6 +81,12 @@ h2 {
   margin-bottom: 1rem;
 }
 
+.wrapper {
+  width: 1200px;
+  max-width: 90vw;
+  margin: auto;
+}
+
 .more-games-btn {
   padding: 0.75rem 1.5rem;
   width: max-content;
@@ -111,7 +117,7 @@ h2 {
   background-color: #ff4747;
   padding: 2rem;
 
-  display: none;
+  /*display: none;*/
 }
 
 .second-menu-content {
@@ -145,11 +151,11 @@ h2 {
 /*---End Secondo Menu---*/
 
 /*---Start Modulo 2---*/
-.games {
+/*.games {
   width: 950px;
   max-width: 90vw;
   margin: auto;
-}
+}*/
 
 .game-list {
   display: grid;
@@ -252,8 +258,11 @@ footer {
   flex-direction: column;
 }
 
-.section1 {
+.footer-top {
   background-color: rgb(216, 231, 231);
+}
+
+.section1 {
   padding-bottom: 60px;
 }
 
@@ -265,13 +274,13 @@ footer {
 
 hr {
   color: black;
-  margin-left: 10%;
-  margin-right: 10%;
+  /*margin-left: 10%;
+  margin-right: 10%;*/
 }
 
 .terms {
   font-size: 14px;
-  margin-left: 10%;
+  /*margin-left: 10%;*/
   text-align: left;
   padding-top: 50px;
   padding-bottom: 20px;
@@ -283,14 +292,14 @@ hr {
 }
 
 .firstLinks {
-  margin-left: 10%;
-  margin-right: 10%;
+  /*margin-left: 10%;
+  margin-right: 10%;*/
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   padding-top: 50px;
   white-space: nowrap;
-  width: 100%;
+  /*width: 100%;*/
 } 
 
 .conversation:hover {
@@ -325,8 +334,8 @@ hr {
 
 .participate {
   font-weight: bold;
-  position: relative;
-  right: 130px;
+  /*position: relative;
+  right: 130px;*/
   padding-left: 30px;
 }
 
@@ -345,7 +354,7 @@ hr {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 4% 10%;
+  margin-top: 4%;
 }
 
 .left {
@@ -395,7 +404,7 @@ hr {
   white-space: nowrap;
   text-align: left;
 }
-
+/*
 .Row1 {
   display: flex;
   flex-direction: row;
@@ -413,7 +422,7 @@ hr {
   flex-direction: row;
   flex-wrap: wrap;
 }
-
+*/
 .agreements {
   color: black;
   text-decoration: none;
