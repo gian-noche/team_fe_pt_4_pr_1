@@ -114,15 +114,10 @@ h2 {
   max-width: 25vw;
   height: 100%;
 
-  background-color: #ff4747;
-  padding: 2rem;
+  background-color: white;
+  padding: 2.5rem;
 
-  /*display: none;*/
-}
-
-.second-menu-content {
-  border: 1px solid white;
-
+  display: none;
 }
 
 .second-menu-nav {
@@ -134,8 +129,8 @@ h2 {
 }
 
 .second-menu-nav > span {
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-size: 1.10rem;
+  font-weight: 800;
 }
 
 .second-menu-items {
