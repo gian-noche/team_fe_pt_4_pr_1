@@ -246,6 +246,402 @@ a:hover > .game-site {
 /*---End Modulo 2---*/
 
 
+/*---Start Modulo 3---*/
+
+.container-modulo3 {
+  .title-news {
+    margin-top: 50px;
+  }
+  
+  .tab-bar {
+    display: flex;
+    width: 970px;
+    max-width: 90vw;
+    margin: auto;
+    overflow-x: hidden;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .tab-bar::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari and Opera */
+  }
+  
+  .scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 2em;
+    color: #000; /* change this to match your design */
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  #scroll-left {
+    left: 0;
+  }
+  
+  #scroll-right {
+    right: 0;
+  }
+  
+  .tab-bar label {
+    margin-right: 0px; 
+  }
+  
+  .tab {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    background-color: #eee; 
+  }
+  .tab1 {
+    background-color: #ccc;
+    border-bottom: 1px solid red  ;
+  }
+  .tab:hover {
+    background-color: #ddd;
+  }
+  
+  .tab.active { 
+    background-color: red !important;
+    border-bottom: 1px solid #fff;
+  } 
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    padding: 70px 0;
+    width: 970px;
+    max-width: 90vw;
+    margin: auto;
+}
+
+.card {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    padding-bottom: 24px;
+    transition: transform 0.4s ease-in-out;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 24px 32px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.divtext {
+  padding: 15px;
+}
+.card img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+}
+.subtitle {
+  color: red;
+}
+.title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.subdate {
+  font-weight: bold;
+  color: black;
+  margin-left: 20px;
+}
+
+.subtitle,
+.title,
+.subdate  {
+    margin-top: 10px;
+    font-weight: bold;
+    margin-bottom: 6.3px;
+}
+
+.p-paragraph {
+
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+.btn {
+  border: #161616 2px solid;
+  padding: 12px 20px;
+  transition: padding 0.1s ease-in-out; 
+  box-sizing: border-box;
+  display: ruby;
+  background-color: #EFEFEF;
+  text-decoration: none;
+  span {
+    color: black;
+  }
+}
+
+.btn:hover {
+  padding: 16px 24px;
+}
+
+.div-btn {
+  margin-bottom: 100px !important;
+}
+}
+
+@media all and (max-width: 1024px){
+
+  .container-modulo3 {
+    .title-news {
+      margin-top: 50px;
+    }
+    
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3 , 1fr);
+      gap: 20px;
+      padding: 70px 0;
+      width: 970px;
+      max-width: 90vw;
+      margin: auto;
+      align-items: center;
+  }
+  
+  #card-1 {
+    grid-row: 1;
+      background-color: #fff;
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+      text-align: left;
+      padding-bottom: 24px;
+      transition: transform 0.4s ease-in-out;
+      height: 499.3px;
+  }
+  #card-2 {
+    grid-row: 1;
+    background-color: #fff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+    text-align: left;
+    padding-bottom: 24px;
+    transition: transform 0.4s ease-in-out;
+    height: 499.3px;
+  }
+
+  #card-3 {
+    grid-row: 2;
+    background-color: #fff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+    text-align: left;
+    padding-bottom: 24px;
+    transition: transform 0.4s ease-in-out;
+    height: 499.3px;
+  }
+
+  #card-4 {
+    grid-row: 2;
+    background-color: #fff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+    text-align: left;
+    padding-bottom: 24px;
+    transition: transform 0.4s ease-in-out;
+    height: 499.3px;
+  }
+  #card-5 {
+    grid-row: 3;
+    background-color: #fff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+    text-align: left;
+    padding-bottom: 24px;
+    transition: transform 0.4s ease-in-out;
+    height: 499.3px;
+
+  }
+  #card-6{
+    grid-row: 3;
+    background-color: #fff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+    text-align: left;
+    padding-bottom: 24px;
+    transition: transform 0.4s ease-in-out;
+    height: 499.3px;
+  }
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 28px 36px rgba(0, 0, 0, 0.6) !important;
+    cursor: pointer;
+  }
+
+
+.btn {
+  border: #161616 2px solid;
+  padding: 12px 20px;
+  transition: padding 0.1s ease-in-out; 
+  box-sizing: border-box;
+  display: ruby;
+  background-color: #EFEFEF;
+  text-decoration: none;
+  span {
+    color: black;
+  }
+}
+
+.btn:hover {
+  padding: 16px 24px;
+}
+
+.div-btn {
+  margin-bottom: 100px !important;
+}
+
+}
+}
+@media all and (max-width: 768px) {
+
+  .container-modulo3 {
+    .title-news {
+      margin-top: 50px;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6 , 1fr);
+      gap: 20px;
+      padding: 70px 0;
+      width: 970px;
+      max-width: 90vw;
+      margin: auto;
+      align-items: center;
+  }
+  
+  #card-1 {
+    grid-row: 1;
+      background-color: #fff;
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+      text-align: left;
+      padding-bottom: 24px; 
+      transition: transform 0.4s ease-in-out;
+      height: initial;
+      margin-bottom: -75px;
+
+  }
+  #card-2 {
+    grid-row: 2;
+    background-color: #fff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+    text-align: left;
+    padding-bottom: 24px;
+    transition: transform 0.4s ease-in-out;
+    height: initial;
+    margin-bottom: -25px;
+  }
+
+  #card-3 {
+    grid-row: 3;
+    background-color: #fff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+    text-align: left;
+    padding-bottom: 24px;
+    transition: transform 0.4s ease-in-out;
+    height: initial;
+    margin-bottom: -20px;
+  }
+
+  #card-4 {
+    grid-row: 4;
+    background-color: #fff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+    text-align: left;
+    padding-bottom: 24px;
+    transition: transform 0.4s ease-in-out;
+    height: initial;
+    margin-top: 20px;
+  }
+  #card-5 {
+    grid-row: 5;
+    background-color: #fff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+    text-align: left;
+    padding-bottom: 24px;
+    transition: transform 0.4s ease-in-out;
+    height: initial;
+    margin-bottom: 10px;
+
+  }
+  #card-6{
+    grid-row: 6;
+    background-color: #fff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+    text-align: left;
+    padding-bottom: 24px;
+    transition: transform 0.4s ease-in-out;
+    height: initial;
+    margin-top: -25px;
+    margin-bottom: px;
+  }
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 28px 36px rgba(0, 0, 0, 0.6) !important;
+    cursor: pointer;
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    display: none;
+}
+
+.subtitle,
+.title,
+.subdate  {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    margin-bottom: 6.3px;
+    text-align: center;
+}
+
+  .p-paragraph {
+
+    display: none;
+  }
+
+
+  .btn {
+    position: relative;
+    border: #161616 2px solid;
+    padding: 12px 20px;
+    transition: padding 0.1s ease-in-out; 
+    box-sizing: border-box;
+    display: ruby;
+    background-color: #EFEFEF;
+    text-decoration: none;
+    span {
+    color: black;
+    }
+  }
+  
+  .btn:hover {
+    padding: 16px 24px;
+  }
+  
+  .div-btn {
+    margin-bottom: 100px !important;
+  }
+
+}
+}
+
+
+/*---End Modulo 3---*/
+
+
 /*---footer---*/
 
 footer {
