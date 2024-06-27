@@ -5,9 +5,266 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EA Italia</title>
     <link rel="stylesheet" href="stile.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <nav></nav>
+    <div class="nav-fixed">
+      <nav class="nav">
+        <div class="container-ea-one">
+          <a href="#"
+            ><img src="assets/user-6768.svg" class="ea-img" alt="logo"
+          /></a>
+        </div>
+        <div class="container-ea-two">
+          <a href="#"
+            ><img
+              src="assets/question-mark-svgrepo-com.svg"
+              class="ea-img"
+              alt="logo"
+          /></a>
+        </div>
+        <div class="container-ea-three">
+          <a href="#"
+            ><img src="assets/ea.svg" class="ea-img logo-menu" alt="logo"
+          /></a>
+        </div>
+      </nav>
+      <div class="main-nav">
+        <div class="nav-container">
+          <div class="div-span">
+            <button id="toggleSecondMenu">
+              <img
+                src="assets/three-dots-vertical-svgrepo-com.svg"
+                class="three-dots"
+                alt="tree vertical dots"
+              />
+            </button>
+          </div>
+          <div class="container-ea">
+            <a href="#"
+              ><img
+                src="assets/ea-wordmark-network-nav-coral.svg"
+                class="text-icon"
+                alt="EA logo"
+            /></a>
+          </div>
+          <div class="menu-toggle">
+            <ul>
+              <li class="menu-item">
+                <a href="#" class="menu-link">GIOCHI</a>
+                <div class="menu-dropdown">
+                  <div class="div-container">
+                    <div>
+                      <p>ESPLORA I GIOCHI</p>
+                      <a href="#">Ultimi giochi</a>
+                      <a href="#">Prossimamente</a>
+                      <a href="#">Giochi gratuiti</a>
+                      <a href="#">EA SPORTS</a>
+                      <a href="#">EA Originals</a>
+                      <a href="#">Libreria dei giochiOfferte EA app</a>
+                      <a href="#">Offerte EA app</a>
+                    </div>
+                    <div>
+                      <p>PIATTAFORME</p>
+                      <a href="#">PC</a>
+                      <a href="#">PlayStation</a>
+                      <a href="#">Xbox</a>
+                      <a href="#">Nintendo Switch</a>
+                      <a href="#">Dispositivi mobili</a>
+                      <a href="#">Pogo</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-toggle">
+            <ul>
+              <li class="menu-item">
+                <a href="#" class="menu-link">ESPERIENZE</a>
+                <div class="menu-dropdown">
+                  <a href="#">Per EA app</a>
+                  <a href="#">EA Play</a>
+                  <a href="#">Competizioni videoludiche</a>
+                  <a href="#">Test di gioco</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-toggle">
+            <ul>
+              <li class="menu-item">
+                <a href="#" class="menu-link">INFORMAZIONI</a>
+                <div class="menu-dropdown">
+                  <a href="#">Società</a>
+                  <a href="#">Lavora con noi</a>
+                  <a href="#">Notizie</a>
+                  <a href="#">Tecnologia</a>
+                  <a href="#">EA Studios</a>
+                  <a href="#">Partner EA</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-toggle">
+            <ul>
+              <li class="menu-item">
+                <a href="#" class="menu-link">IMPEGNI</a>
+                <div class="menu-dropdown">
+                  <a href="#">I nostri impegni</a>
+                  <a href="#">Gioco positivo</a>
+                  <a href="#">Diversità e inclusione</a>
+                  <a href="#">Impatto sociale</a>
+                  <a href="#">Persone e cultura</a>
+                  <a href="#">Ambiente</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-toggle">
+            <ul>
+              <li class="menu-item">
+                <a href="#" class="menu-link">RISORSE</a>
+                <div class="menu-dropdown">
+                  <a href="#">Aiuto</a>
+                  <a href="#">Forum</a>
+                  <a href="#">Filtro famiglia</a>
+                  <a href="#">Accessibilità</a>
+                  <a href="#">Stampa</a>
+                  <a href="#">Investitori</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--start sidebar-->
+    <div class="side-bar-menu" id="mainmenu">
+      <div class="main-side">
+        <div class="side-container">
+          <div class="side-ea">
+            <a href="#"
+              ><img
+                src="assets/ea-wordmark-network-nav-coral.svg"
+                class="side-icon"
+                alt="EA logo"
+            /></a>
+            <button class="leave-toggle" id="closemainmenu">&times;</button>
+          </div>
+          <div class="side-toggle">
+            <ul>
+              <li class="side-item">
+                <a href="#" class="side-link">GIOCHI</a>
+                <hr />
+                <div class="side-dropdown">
+                  <div class="side-container">
+                    <div>
+                      <a href="#"><p>ESPLORA I GIOCHI</p></a>
+                    </div>
+                    <hr />
+                    <div>
+                      <a href="#"><p>PIATTAFORME</p></a>
+                    </div>
+                    <hr />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="side-toggle">
+            <ul>
+              <li class="side-item">
+                <a href="#" class="side-link">ESPERIENZE</a>
+                <hr />
+                <div class="side-dropdown">
+                  <a href="#">Per EA app</a>
+                  <hr />
+                  <a href="#">EA Play</a>
+                  <hr />
+                  <a href="#">Competizioni videoludiche</a>
+                  <hr />
+                  <a href="#">Test di gioco</a>
+                  <hr />
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="side-toggle">
+            <ul>
+              <li class="side-item">
+                <a href="#" class="side-link">INFORMAZIONI</a>
+                <hr />
+                <div class="side-dropdown">
+                  <a href="#">Società</a>
+                  <hr />
+                  <a href="#">Lavora con noi</a>
+                  <hr />
+                  <a href="#">Notizie</a>
+                  <hr />
+                  <a href="#">Tecnologia</a>
+                  <hr />
+                  <a href="#">EA Studios</a>
+                  <hr />
+                  <a href="#">Partner EA</a>
+                  <hr />
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="side-toggle">
+            <ul>
+              <li class="side-item">
+                <a href="#" class="side-link">IMPEGNI</a>
+                <hr />
+                <div class="side-dropdown">
+                  <a href="#">I nostri impegni</a>
+                  <hr />
+                  <a href="#">Gioco positivo</a>
+                  <hr />
+                  <a href="#">Diversità e inclusione</a>
+                  <hr />
+                  <a href="#">Impatto sociale</a>
+                  <hr />
+                  <a href="#">Persone e cultura</a>
+                  <hr />
+                  <a href="#">Ambiente</a>
+                  <hr />
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="side-toggle">
+            <ul>
+              <li class="side-item">
+                <a href="#" class="side-link">RISORSE</a>
+                <hr />
+                <div class="side-dropdown">
+                  <a href="#">Aiuto</a>
+                  <hr />
+                  <a href="#">Forum</a>
+                  <hr />
+                  <a href="#">Filtro famiglia</a>
+                  <hr />
+                  <a href="#">Accessibilità</a>
+                  <hr />
+                  <a href="#">Stampa</a>
+                  <hr />
+                  <a href="#">Investitori</a>
+                  <hr />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--end sidebar-->
 
     <!--Secondo menu-->
     <div class="second-menu" id="secondMenu">
@@ -127,6 +384,7 @@
       </div>
     </div>
 
+    <div id="overlay"></div>
     <main>
       <!--Start Modulo 1 (Marco)-->
 
@@ -248,67 +506,139 @@
         <div class="tabset">
           <div class="tab-bar">
             <button class="scroll-button" id="scroll-left">&#8249;</button>
-            <label for="tab1"><a href="#content1" class="tab tab1">Notizie EA</a></label>
-            <label for="tab2"><a href="#content2" class="tab">EA SPORTS FC</a></label>
-            <label for="tab3"><a href="#content3" class="tab">Apex Legends</a></label>
-            <label for="tab4"><a href="#content4" class="tab">The Sims 4</a></label>
-            <label for="tab5"><a href="#content5" class="tab">Star Wars</a></label>
+            <label for="tab1"
+              ><a href="#content1" class="tab tab1">Notizie EA</a></label
+            >
+            <label for="tab2"
+              ><a href="#content2" class="tab">EA SPORTS FC</a></label
+            >
+            <label for="tab3"
+              ><a href="#content3" class="tab">Apex Legends</a></label
+            >
+            <label for="tab4"
+              ><a href="#content4" class="tab">The Sims 4</a></label
+            >
+            <label for="tab5"
+              ><a href="#content5" class="tab">Star Wars</a></label
+            >
             <label for="tab6"><a href="#content6" class="tab">F1</a></label>
-            <label for="tab7"><a href="#content7" class="tab">Battlefield</a></label>
-            <label for="tab8"><a href="#content8" class="tab">Need for Speed</a></label>
+            <label for="tab7"
+              ><a href="#content7" class="tab">Battlefield</a></label
+            >
+            <label for="tab8"
+              ><a href="#content8" class="tab">Need for Speed</a></label
+            >
             <button class="scroll-button" id="scroll-right">&#8250;</button>
-            </div>
-        <hr>
+          </div>
+          <hr />
           <div class="tab-content" id="content1">
             <div class="card-container">
-              <div class="card" id="card-1"> 
-                  <img src="assets/container1.png" alt="Ultime innovazioni">
-                  <div class="divtext">
-                    <p class="subtitle">Electronic Arts Inc.   <span class="subdate">8-mag-2024</span></p>
-                  <h2 class="title">Le ultime innovazioni tecnologiche di EA SPORTS</h2>
-                  <p class="p-paragraph">Uno sguardo ai nostri più grandi progressi tecnologici mentre ci prepariamo per un altro anno all'insegna dell'innovazione.</p>
-                  </div>
+              <div class="card" id="card-1">
+                <img src="assets/container1.png" alt="Ultime innovazioni" />
+                <div class="divtext">
+                  <p class="subtitle">
+                    Electronic Arts Inc. <span class="subdate">8-mag-2024</span>
+                  </p>
+                  <h2 class="title">
+                    Le ultime innovazioni tecnologiche di EA SPORTS
+                  </h2>
+                  <p class="p-paragraph">
+                    Uno sguardo ai nostri più grandi progressi tecnologici
+                    mentre ci prepariamo per un altro anno all'insegna
+                    dell'innovazione.
+                  </p>
+                </div>
               </div>
               <div class="card" id="card-2">
-                  <img src="assets/container2.png" alt="Tecnologia per il patching">
-                  <div class="divtext">
-                  <p class="subtitle">Electronic Arts Inc.   <span class="subdate">8-mag-2024</span></p>
-                  <div class="title">Una tecnologia rivoluzionaria per il patching...</div>
-                  <p class="p-paragraph">Hans van Veenendaal di EA ha creato una rivoluzionaria tecnologia per le patch di gioco con cui ridurre tempi e costi, e incoraggiare la sostenibilià.</p>
+                <img
+                  src="assets/container2.png"
+                  alt="Tecnologia per il patching"
+                />
+                <div class="divtext">
+                  <p class="subtitle">
+                    Electronic Arts Inc. <span class="subdate">8-mag-2024</span>
+                  </p>
+                  <div class="title">
+                    Una tecnologia rivoluzionaria per il patching...
                   </div>
+                  <p class="p-paragraph">
+                    Hans van Veenendaal di EA ha creato una rivoluzionaria
+                    tecnologia per le patch di gioco con cui ridurre tempi e
+                    costi, e incoraggiare la sostenibilià.
+                  </p>
+                </div>
               </div>
               <div class="card" id="card-3">
-                  <img src="assets/container3.jpg" alt="Aggiornamento Battlefield">
-                  <div class="divtext">
-                  <p class="subtitle">Electronic Arts Inc.   <span class="subdate">8-mag-2024</span></p>
-                  <div class="title">Un aggiornamento su battlefiled 2042 e un benvenuto nel team a Motive Stud...</div>
-                  <p class="p-paragraph">Il team di Battlefield si amplia mentre guardiamo al futuro della serie</p>
+                <img
+                  src="assets/container3.jpg"
+                  alt="Aggiornamento Battlefield"
+                />
+                <div class="divtext">
+                  <p class="subtitle">
+                    Electronic Arts Inc. <span class="subdate">8-mag-2024</span>
+                  </p>
+                  <div class="title">
+                    Un aggiornamento su battlefiled 2042 e un benvenuto nel team
+                    a Motive Stud...
                   </div>
+                  <p class="p-paragraph">
+                    Il team di Battlefield si amplia mentre guardiamo al futuro
+                    della serie
+                  </p>
+                </div>
               </div>
               <div class="card" id="card-4">
-                <img src="assets/container4.png" alt="Viaggio di Kate Kellogg">
+                <img
+                  src="assets/container4.png"
+                  alt="Viaggio di Kate Kellogg"
+                />
                 <div class="divtext">
-                <p class="subtitle">Electronic Arts Inc.   <span class="subdate">8-mag-2024</span></p>
-                <div class="title">Il viaggio di Kate Kellogg alla guida del futuro videoludico di Electroni c...</div>
-                <p class="p-paragraph">Il viaggio di Kate Kellogg come direttrice operativa di EA Studios, in cui approfondiremo il suo percorso di leadership, il suo stile collaborativo e le sue idee sul futuro dei videogiochi.</p>                </div>
+                  <p class="subtitle">
+                    Electronic Arts Inc. <span class="subdate">8-mag-2024</span>
+                  </p>
+                  <div class="title">
+                    Il viaggio di Kate Kellogg alla guida del futuro videoludico
+                    di Electroni c...
+                  </div>
+                  <p class="p-paragraph">
+                    Il viaggio di Kate Kellogg come direttrice operativa di EA
+                    Studios, in cui approfondiremo il suo percorso di
+                    leadership, il suo stile collaborativo e le sue idee sul
+                    futuro dei videogiochi.
+                  </p>
+                </div>
               </div>
-            <div class="card" id="card-5">
-              <img src="assets/container5.png" alt="EA app per Mac">
-              <div class="divtext">
-              <p class="subtitle">Electronic Arts Inc.   <span class="subdate">8-mag-2024</span></p>
-              <div class="title">La nuovissima EA app per Mac</div>
-              <p class="p-paragraph">A breve EA app prenderà il posto di Origin come piattaforma principale per Mac</p>
+              <div class="card" id="card-5">
+                <img src="assets/container5.png" alt="EA app per Mac" />
+                <div class="divtext">
+                  <p class="subtitle">
+                    Electronic Arts Inc. <span class="subdate">8-mag-2024</span>
+                  </p>
+                  <div class="title">La nuovissima EA app per Mac</div>
+                  <p class="p-paragraph">
+                    A breve EA app prenderà il posto di Origin come piattaforma
+                    principale per Mac
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="card-6">
+                <img src="assets/container6.jpg" alt="The Sims" />
+                <div class="divtext">
+                  <p class="subtitle">
+                    Electronic Arts Inc. <span class="subdate">8-mag-2024</span>
+                  </p>
+                  <div class="title">
+                    Come The Sims e i suoi partner stanno promuovendo diversità
+                    e rappresentazi...
+                  </div>
+                  <p class="p-paragraph">
+                    Maxis inaugura una collaborazione con Dark & Lovely e
+                    Danielle "Ebonix" Udogaranya per aiutare di più le persone a
+                    riconoscersi nel gioco
+                  </p>
+                </div>
               </div>
             </div>
-          <div class="card" id="card-6">
-            <img src="assets/container6.jpg" alt="The Sims">
-            <div class="divtext">
-            <p class="subtitle">Electronic Arts Inc.   <span class="subdate">8-mag-2024</span></p>
-            <div class="title">Come The Sims e i suoi partner stanno promuovendo diversità e rappresentazi...</div>
-            <p class="p-paragraph">Maxis inaugura una collaborazione con Dark & Lovely e Danielle "Ebonix" Udogaranya per aiutare di più le persone a riconoscersi nel gioco</p>
-            </div>
-          </div>
-          </div>
           </div>
         </div>
         <div class="div-btn">
@@ -328,68 +658,215 @@
 
     <footer>
       <section class="section1">
-        <p class="terms">*SI APPLICANO CONDIZIONI, LIMITAZIONI ED ESCLUSIONI. CONSULTARE I <span><a href="https://www.ea.com/it-it/legal/ea-play-terms" class="red-link">TERMINI DI EA PLAY</a></span> PER I DETTAGLI.</p>
-        <hr>
-        <div class = "firstLinks">
-          <a href="https://www.ea.com/it-it/careers" class="conversation" id="tooltip">Lavora con noi<span class="tooltiptext">Lavora con noi</span></a>
-          <a href="https://www.ea.com/it-it/executives" class="conversation" id="tooltip">Dirigenza<span class="tooltiptext">Dirigenza</span></a>
-          <a href="https://www.ea.com/it-it/news/2023-impact-report" class="conversation" id="tooltip">Rapporto sull'impatto<span class="tooltiptext">Rapporto sull'impatto</span></a>
-          <a href="https://www.ea.com/it-it/commitments" class="conversation" id="tooltip">I nostri impegni<span class="tooltiptext">I nostri impegni</span></a>
-          <a href="https://www.ea.com/it-it/about/reporting-concerns" class="conversation" id="tooltip">Segnala un problema<span class="tooltiptext">Segnala un problema</span></a>
+        <p class="terms">
+          *SI APPLICANO CONDIZIONI, LIMITAZIONI ED ESCLUSIONI. CONSULTARE I
+          <span
+            ><a
+              href="https://www.ea.com/it-it/legal/ea-play-terms"
+              class="red-link"
+              >TERMINI DI EA PLAY</a
+            ></span
+          >
+          PER I DETTAGLI.
+        </p>
+        <hr />
+        <div class="firstLinks">
+          <a
+            href="https://www.ea.com/it-it/careers"
+            class="conversation"
+            id="tooltip"
+            >Lavora con noi<span class="tooltiptext">Lavora con noi</span></a
+          >
+          <a
+            href="https://www.ea.com/it-it/executives"
+            class="conversation"
+            id="tooltip"
+            >Dirigenza<span class="tooltiptext">Dirigenza</span></a
+          >
+          <a
+            href="https://www.ea.com/it-it/news/2023-impact-report"
+            class="conversation"
+            id="tooltip"
+            >Rapporto sull'impatto<span class="tooltiptext"
+              >Rapporto sull'impatto</span
+            ></a
+          >
+          <a
+            href="https://www.ea.com/it-it/commitments"
+            class="conversation"
+            id="tooltip"
+            >I nostri impegni<span class="tooltiptext"
+              >I nostri impegni</span
+            ></a
+          >
+          <a
+            href="https://www.ea.com/it-it/about/reporting-concerns"
+            class="conversation"
+            id="tooltip"
+            >Segnala un problema<span class="tooltiptext"
+              >Segnala un problema</span
+            ></a
+          >
           <section class="participate">
             <div>
               <h3>Partecipa alla conversazione</h3>
             </div>
             <div class="icons">
-              <a class="icon" id="tooltip" href="https://www.facebook.com/EA"><img width="22" height="25" src="https://cdn.icon-icons.com/icons2/791/PNG/512/FB_icon-icons.com_65484.png"/><span class="tooltiptext">Facebook</span></a>
-              <a class="icon" id="tooltip" href="https://x.com/ea"><img width="32" height="25" src="https://cdn.icon-icons.com/icons2/4029/PNG/512/twitter_x_new_logo_x_icon_256077.png"/><span class="tooltiptext">Twitter</span></a>
-              <a class="icon" id="tooltip" href="https://www.youtube.com/EA"><img width="22" height="23" src="https://cdn.icon-icons.com/icons2/791/PNG/512/YOUTUBE_icon-icons.com_65487.png"/><span class="tooltiptext">YouTube</span></a>
-              <a class="icon" id="tooltip" href="https://www.instagram.com/ea/"><img width="23" height="23" src="https://cdn.icon-icons.com/icons2/791/PNG/512/instagram_f_icon-icons.com_65485.png"/><span class="tooltiptext">Instagram</span></a>
-              <a class="icon" id="tooltip" href="https://www.twitch.tv/ea"><img width="23" height="23" src="https://img.icons8.com/?size=100&id=18104&format=png&color=000000"/><span class="tooltiptext">Twitch</span></a>
+              <a class="icon" id="tooltip" href="https://www.facebook.com/EA"
+                ><img
+                  width="22"
+                  height="25"
+                  src="https://cdn.icon-icons.com/icons2/791/PNG/512/FB_icon-icons.com_65484.png"
+                /><span class="tooltiptext">Facebook</span></a
+              >
+              <a class="icon" id="tooltip" href="https://x.com/ea"
+                ><img
+                  width="32"
+                  height="25"
+                  src="https://cdn.icon-icons.com/icons2/4029/PNG/512/twitter_x_new_logo_x_icon_256077.png"
+                /><span class="tooltiptext">Twitter</span></a
+              >
+              <a class="icon" id="tooltip" href="https://www.youtube.com/EA"
+                ><img
+                  width="22"
+                  height="23"
+                  src="https://cdn.icon-icons.com/icons2/791/PNG/512/YOUTUBE_icon-icons.com_65487.png"
+                /><span class="tooltiptext">YouTube</span></a
+              >
+              <a class="icon" id="tooltip" href="https://www.instagram.com/ea/"
+                ><img
+                  width="23"
+                  height="23"
+                  src="https://cdn.icon-icons.com/icons2/791/PNG/512/instagram_f_icon-icons.com_65485.png"
+                /><span class="tooltiptext">Instagram</span></a
+              >
+              <a class="icon" id="tooltip" href="https://www.twitch.tv/ea"
+                ><img
+                  width="23"
+                  height="23"
+                  src="https://img.icons8.com/?size=100&id=18104&format=png&color=000000"
+                /><span class="tooltiptext">Twitch</span></a
+              >
             </div>
           </section>
         </div>
       </section>
 
-
-      <section class = "section2">
-
+      <section class="section2">
         <section>
-          <a href="https://www.ea.com/it-it"><img class="logo" width="65" height="65" src="https://media.contentapi.ea.com/content/dam/eacom/common/medallion-violet.png"/></a>
+          <a href="https://www.ea.com/it-it"
+            ><img
+              class="logo"
+              width="65"
+              height="65"
+              src="https://media.contentapi.ea.com/content/dam/eacom/common/medallion-violet.png"
+          /></a>
         </section>
 
-        <section class ="left">
+        <section class="left">
           <div class="last-links">
             <div class="row1">
-              <a href="https://www.ea.com/it-it/games/library" class="actions" id="tooltip">Libreria dei giochi<span class="tooltiptext">Libreria dei giochi</span></a>
-              <a href="https://www.ea.com/it-it/ea-play" class="actions" id="tooltip">Registrati<span class="tooltiptext">Registrati</span></a>
-              <a href="https://www.ea.com/it-it/redeem" class="actions" id="tooltip">Riscatta codice<span class="tooltiptext">Riscatta codice</span></a>
+              <a
+                href="https://www.ea.com/it-it/games/library"
+                class="actions"
+                id="tooltip"
+                >Libreria dei giochi<span class="tooltiptext"
+                  >Libreria dei giochi</span
+                ></a
+              >
+              <a
+                href="https://www.ea.com/it-it/ea-play"
+                class="actions"
+                id="tooltip"
+                >Registrati<span class="tooltiptext">Registrati</span></a
+              >
+              <a
+                href="https://www.ea.com/it-it/redeem"
+                class="actions"
+                id="tooltip"
+                >Riscatta codice<span class="tooltiptext"
+                  >Riscatta codice</span
+                ></a
+              >
             </div>
             <div class="row2">
-              <a href="https://www.ea.com/it-it/ea-app" class="actions" id="tooltip">EA app<span class="tooltiptext">EA app</span></a>
-              <a href="https://www.ea.com/it-it/about" class="actions" id="tooltip">Informazioni<span class="tooltiptext">Informazioni</span></a>
-              <a href="https://www.ea.com/it-it/accessibility" class="actions" id="tooltip">Accessibilità<span class="tooltiptext">Accessibilità</span></a>
-              <a href="https://help.ea.com/it/help-home/" class="actions" id="tooltip">Aiuto<span class="tooltiptext">Aiuto</span></a>
+              <a
+                href="https://www.ea.com/it-it/ea-app"
+                class="actions"
+                id="tooltip"
+                >EA app<span class="tooltiptext">EA app</span></a
+              >
+              <a
+                href="https://www.ea.com/it-it/about"
+                class="actions"
+                id="tooltip"
+                >Informazioni<span class="tooltiptext">Informazioni</span></a
+              >
+              <a
+                href="https://www.ea.com/it-it/accessibility"
+                class="actions"
+                id="tooltip"
+                >Accessibilità<span class="tooltiptext">Accessibilità</span></a
+              >
+              <a
+                href="https://help.ea.com/it/help-home/"
+                class="actions"
+                id="tooltip"
+                >Aiuto<span class="tooltiptext">Aiuto</span></a
+              >
             </div>
           </div>
 
           <div class="small_links">
             <div class="Row1">
-              <a href="https://www.ea.com/it-it/legal" class="agreements" id="tooltip">Note legali e privacy<span class="tooltiptext">Note legali e privacy</span></a>
-              <a href="https://www.ea.com/it-it/legal/user-agreement" class="agreements" id="tooltip">Accordo con l'utente<span class="tooltiptext">Accordo con l'utente</span></a>
+              <a
+                href="https://www.ea.com/it-it/legal"
+                class="agreements"
+                id="tooltip"
+                >Note legali e privacy<span class="tooltiptext"
+                  >Note legali e privacy</span
+                ></a
+              >
+              <a
+                href="https://www.ea.com/it-it/legal/user-agreement"
+                class="agreements"
+                id="tooltip"
+                >Accordo con l'utente<span class="tooltiptext"
+                  >Accordo con l'utente</span
+                ></a
+              >
             </div>
             <div class="Row2">
-              <a href="https://www.ea.com/it-it/legal/privacy-and-cookie-policy" class="agreements" id="tooltip">Politica sulla privacy e sui cookie (i tuoi diritti sulla privacy)<span class="tooltiptext">Politica sulla privacy e sui cookie (i tuoi diritti sulla privacy)</span></a>
+              <a
+                href="https://www.ea.com/it-it/legal/privacy-and-cookie-policy"
+                class="agreements"
+                id="tooltip"
+                >Politica sulla privacy e sui cookie (i tuoi diritti sulla
+                privacy)<span class="tooltiptext"
+                  >Politica sulla privacy e sui cookie (i tuoi diritti sulla
+                  privacy)</span
+                ></a
+              >
             </div>
             <div class="Row3">
-              <a href="https://www.ea.com/it-it/legal/service-updates" class="agreements" id="tooltip">Aggiornamenti sui servizi online<span class="tooltiptext">Aggiornamenti sui servizi online</span></a>
-              <a href="https://www.ea.com/it-it" class="agreements" id="tooltip">Cookie Preferenze<span class="tooltiptext">Cookie Preferenze</span></a>
+              <a
+                href="https://www.ea.com/it-it/legal/service-updates"
+                class="agreements"
+                id="tooltip"
+                >Aggiornamenti sui servizi online<span class="tooltiptext"
+                  >Aggiornamenti sui servizi online</span
+                ></a
+              >
+              <a href="https://www.ea.com/it-it" class="agreements" id="tooltip"
+                >Cookie Preferenze<span class="tooltiptext"
+                  >Cookie Preferenze</span
+                ></a
+              >
             </div>
           </div>
           <div>
             <p class="close">© 2024 Electronic Arts Inc.</p>
           </div>
-          
         </section>
 
         <section class="right">
@@ -402,11 +879,15 @@
             </div>
           </section>
           <section class="priv">
-            <a href="https://privacy.truste.com/privacy-seal/validation?rid=2593a571-b03b-4951-9a22-c175bd66b351&lang=it"><img src="https://privacy-policy.truste.com/privacy-seal/seal?rid=2593a571-b03b-4951-9a22-c175bd66b351" class="privacy"/></a>
+            <a
+              href="https://privacy.truste.com/privacy-seal/validation?rid=2593a571-b03b-4951-9a22-c175bd66b351&lang=it"
+              ><img
+                src="https://privacy-policy.truste.com/privacy-seal/seal?rid=2593a571-b03b-4951-9a22-c175bd66b351"
+                class="privacy"
+            /></a>
           </section>
         </section>
       </section>
-      
     </footer>
   </body>
 </html>
