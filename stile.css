@@ -117,7 +117,7 @@ h2 {
   background-color: white;
   padding: 2.5rem;
 
-  display: none;
+  /*display: none;*/
 }
 
 .second-menu-nav {
@@ -380,9 +380,10 @@ a:hover > .game-site {
   display: ruby;
   background-color: #EFEFEF;
   text-decoration: none;
-  span {
-    color: black;
-  }
+}
+
+.btn > span {
+  color: black;
 }
 
 .btn:hover {
