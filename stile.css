@@ -1079,8 +1079,9 @@ a:hover > .game-site {
   }
 
   .hero-bottom-content p {
-    flex: none;
+    flex: 1 1 auto;
     margin: 0;
+    text-align: center;
   }
 
   .hero-bottom .div-btn {
