@@ -87,7 +87,7 @@ h2 {
   margin: auto;
 }
 
-.games > .div-btn > .btn {
+.div-btn > .btn {
   border: #161616 2px solid;
   padding: 12px 20px;
   transition: padding 0.1s ease-in-out; 
@@ -100,11 +100,11 @@ h2 {
   
 }
 
-.games > .div-btn > .btn:hover {
+.div-btn > .btn:hover {
   padding: 16px 24px;
 }
 
-.games > .div-btn {
+.div-btn {
   margin: 40px 0 80px;
 }
 
@@ -1021,7 +1021,22 @@ a:hover > .game-site {
 
 /*---Start Modulo 4---*/
 .second-hero {
- background-image: url()
+  height: 486px;
+  width: 100vw;
+  background-image: url("assets/bg-modulo-4-1920.jpg");
+  background-size: cover;
+}
+
+.hero-content {
+
+  display: flex;
+  flex: row wrap;
+}
+
+.hero-content-empty {
+  width: 50%;
+  height: 100%;
+  background-color: red;
 }
 /*---End Modulo 4---*/
 
