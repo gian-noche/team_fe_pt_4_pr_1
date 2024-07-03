@@ -192,7 +192,7 @@ footer {
 }
 
 .section1 {
-  background-color: rgb(216, 231, 231);
+  background-color: #eaeaea;
   padding-bottom: 60px;
 }
 
@@ -210,7 +210,6 @@ hr {
 
 .terms {
   font-size: 14px;
-  margin-left: 10%;
   text-align: left;
   padding-top: 50px;
   padding-bottom: 20px;
