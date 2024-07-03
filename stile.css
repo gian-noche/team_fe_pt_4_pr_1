@@ -87,6 +87,12 @@ h2 {
   margin: auto;
 }
 
+.wrapper {
+  width: 1000px;
+  max-width: 90vw;
+  margin: auto;
+}
+
 .div-btn > .btn {
   border: #161616 2px solid;
   padding: 12px 20px;
@@ -1171,7 +1177,7 @@ footer {
 }
 
 .section1 {
-  background-color: rgb(216, 231, 231);
+  background-color: #eaeaea;
   padding-bottom: 60px;
 }
 
@@ -1183,13 +1189,10 @@ footer {
 
 hr {
   color: black;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .terms {
   font-size: 14px;
-  margin-left: 10%;
   text-align: left;
   padding-top: 50px;
   padding-bottom: 20px;
@@ -1205,7 +1208,6 @@ hr {
   flex-direction: row;
   flex-wrap: wrap;
   padding-top: 50px;
-  white-space: nowrap;
 } 
 
 .conversation:hover {
@@ -1230,7 +1232,6 @@ hr {
 #tooltip:hover .tooltiptext {
   visibility: visible;
   display: inline;
-  white-space: nowrap;
   text-decoration: none;
 }
 
@@ -1277,7 +1278,6 @@ hr {
   color: black;
   font-size: 18px;
   text-decoration: none;
-  white-space: nowrap;
 }
 
 .actions:hover {
@@ -1288,14 +1288,12 @@ hr {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  white-space: nowrap;
 }
 
 .row2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  white-space: nowrap;
   padding-top: 25px;
 }
 
@@ -1304,7 +1302,6 @@ hr {
   padding-left: 27px;
   display: flex;
   flex-direction: column;
-  white-space: nowrap;
   text-align: left;
 }
 
