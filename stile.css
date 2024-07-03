@@ -81,6 +81,12 @@ h2 {
   margin-bottom: 1rem;
 }
 
+.wrapper {
+  width: 1000px;
+  max-width: 90vw;
+  margin: auto;
+}
+
 button {
   padding: 0.75rem 1.5rem;
 }
@@ -185,12 +191,6 @@ a:hover > .game-site {
 
 
 /*---footer---*/
-
-footer {
-  display: flex;
-  flex-direction: column;
-}
-
 .section1 {
   background-color: #eaeaea;
   padding-bottom: 60px;
@@ -204,8 +204,6 @@ footer {
 
 hr {
   color: black;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .terms {
@@ -225,7 +223,6 @@ hr {
   flex-direction: row;
   flex-wrap: wrap;
   padding-top: 50px;
-  white-space: nowrap;
 } 
 
 .conversation:hover {
@@ -252,7 +249,6 @@ hr {
 #tooltip:hover .tooltiptext {
   visibility: visible;
   display: inline;
-  white-space: nowrap;
   text-decoration: none;
 }
 
@@ -299,7 +295,6 @@ hr {
   color: black;
   font-size: 18px;
   text-decoration: none;
-  white-space: nowrap;
 }
 
 .actions:hover {
@@ -310,14 +305,12 @@ hr {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  white-space: nowrap;
 }
 
 .row2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  white-space: nowrap;
   padding-top: 25px;
 }
 
@@ -327,7 +320,6 @@ hr {
   padding-left: 27px;
   display: flex;
   flex-direction: column;
-  white-space: nowrap;
   text-align: left;
 }
 
