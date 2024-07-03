@@ -1030,14 +1030,60 @@ a:hover > .game-site {
 .hero-content {
 
   display: flex;
-  flex: row wrap;
+  flex-flow: row wrap;
 }
 
-.hero-content-empty {
-  width: 50%;
-  height: 100%;
-  background-color: red;
+.hero-bottom {
+  background-color: #6fb0d6;
 }
+
+.hero-bottom-content p {
+  font-size: 1.35rem;
+  font-weight: bold;
+  text-align: left;
+
+  margin-right: 100px;
+
+  flex: 1 1 0;
+}
+
+.hero-bottom-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: auto;
+  padding: 20px 0;
+}
+
+.hero-bottom .div-btn {
+  margin: 20px 0;
+  flex: 1 1 0;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 860px) {
+  .hero-bottom-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-bottom-content p {
+    flex: none;
+    margin: 0;
+  }
+
+  .hero-bottom .div-btn {
+    flex: none;
+  }
+  
+}
+
 /*---End Modulo 4---*/
 
 /*---footer---*/
