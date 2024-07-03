@@ -568,6 +568,10 @@ h2 {
 /*---End Secondo Menu---*/
 
 /*---Start Modulo 2---*/
+.games {
+  margin-top: 50px;
+}
+
 .game-list {
   display: grid;
   gap: 1.5rem;
