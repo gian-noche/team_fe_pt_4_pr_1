@@ -1202,15 +1202,12 @@ hr {
 }
 
 .firstLinks {
-  margin-left: 10%;
-  margin-right: 10%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   padding-top: 50px;
   white-space: nowrap;
-  width: 100%;
-}
+} 
 
 .conversation:hover {
   color: red;
