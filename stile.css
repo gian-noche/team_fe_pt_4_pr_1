@@ -138,6 +138,7 @@ h2 {
   display: none; 
 }
 
+
 .nav .ea-img {
   width: 18px;
   margin-right: 18px;
@@ -275,6 +276,10 @@ h2 {
   font-size: 14px;
 }
 
+.menu-dropdown a:hover {
+  color: #ff4747;
+}
+
 .menu-item:hover .menu-dropdown {
   display: block;
 }
@@ -287,6 +292,27 @@ h2 {
   display: inline-block;
   margin: 0px 10px;
 }
+
+
+.span-svg {
+  display: inline-block;
+  width: 17px;
+  height: 14px;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+.menu-link:hover .span-svg svg {
+  transform: rotateX(180deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+.rotate-svg {
+  transform: rotateX(180deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+
 /*---End Navbar---*/
 
 
@@ -303,7 +329,7 @@ h2 {
   width: 375px;
   background-color: #f3f3f3;
   color: #161616;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   margin-top: 50px;
 }
@@ -316,8 +342,9 @@ h2 {
   margin-bottom: 20px;
 }
 
-.side-container a p {
+.side-container .option-side {
   font-size: 14px;
+
 }
 
 .side-container, .side-dropdown {
@@ -333,7 +360,8 @@ h2 {
   color: #161616;
   text-decoration: none;
   padding: 10px 0;
-  justify-content: space-between;
+  justify-content: space-between;padding-top: 5px;
+  padding-bottom: 5px;
   align-items: left;
   width: calc(375px - 20px );
 }
@@ -381,13 +409,8 @@ h2 {
   margin-bottom: 10px;
 }
 
-.side-dropdown {
-  display: none;
-  background-color: #f3f3f3;
-  padding-left: 0px;
-}
-
 .side-link {
+  display: block;
   font-size: 16px;
   color: #161616;
   text-decoration: none;
@@ -396,21 +419,26 @@ h2 {
   cursor: pointer;
   text-align: left;
   position: relative;
+  height: 30px;
 }
 
 .side-dropdown {
   display: none;
+  background-color: #f3f3f3;
   padding-left: 0px;
+  font-size: 24px;
+  opacity: 0; 
+  transition: opacity 0.5s ease;
 }
 
-.side-item:hover .side-dropdown {
-  display: block;
+.side-dropdown.visible {
+  opacity: 1; 
 }
 
-.side-dropdown p {
-  display: block;
-  padding: 10px 0;
-  color: #161616;
+.side-container .option-side {
+  font-size: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px
 }
 
 .side-dropdown a:hover {
@@ -422,10 +450,10 @@ h2 {
 }
 
 .side-dropdown a {
-  display: block;
-  padding: 10px 0;
+  padding: 20px 0;
   color: #161616;
   text-decoration: none;
+  opacity: 0.5
 }
 
 .main-side ul {
@@ -446,8 +474,69 @@ h2 {
 .side-dropdown hr {
   border: none;
   border-top: 1px solid #161616;
-  width: 100%; 
+  width: 95%; 
   margin: 0;
+}
+
+.span-svg-side {
+  display: inline-block;
+  width: 17px;
+  height: 14px;
+  cursor: pointer;
+}
+
+.svg-one {
+  margin-left: 242px;
+}
+
+.svg-two {
+  margin-left: 201px;
+}
+
+.svg-three {
+  margin-left: 187px;
+}
+
+.svg-four {
+  margin-left: 234px;
+}
+
+.svg-five {
+  margin-left: 229px;
+}
+
+.rotate {
+  transition: transform 0.5s ease;
+  transform: rotateX(180deg); 
+}
+
+.initial-side {
+  transition: transform 0.5s ease;
+  transform: rotateX(0deg); 
+}
+
+.side-dropdown.show {
+  display: block; 
+}
+
+.span-plus {
+  display: inline-block;
+  width: 17px;
+  height: 14px;
+  margin-left: 150px;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.span-plus-one {
+  display: inline-block;
+  width: 17px;
+  height: 14px;
+  margin-left: 184px;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 
@@ -607,63 +696,97 @@ a:hover > .game-site {
     margin-top: 50px;
   }
   
-  .tab-bar {
+  a {
+    text-decoration: none;
+    color: #161616;
+  }
+
+  .tabs-container {
     display: flex;
+    background-color: #f3f3f3;
     width: 970px;
     max-width: 90vw;
     margin: auto;
-    overflow-x: hidden;
     white-space: nowrap;
     position: relative;
+    overflow: hidden;
   }
-  
-  .tab-bar::-webkit-scrollbar {
-    display: none; /* For Chrome, Safari and Opera */
-  }
-  
-  .scroll-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: transparent;
-    border: none;
-    font-size: 2em;
-    color: #000; /* change this to match your design */
+
+  .tabs-container svg {
+    width: 25px;
+    height: 25px;
+    padding: 8px;
     cursor: pointer;
-    z-index: 1;
+    color: #808080;
+    border-radius: 50%;
   }
-  
-  #scroll-left {
-    left: 0;
+
+  .tabs-container ul {
+    display: flex;
+    gap: 10px;
+    padding: 20px 0px;
+    margin: 0;
+    list-style: none;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
-  
-  #scroll-right {
-    right: 0;
+
+  .tabs-container li {
+    cursor: pointer;
   }
-  
-  .tab-bar label {
-    margin-right: 0px; 
+
+  .border-tabs {
+    border-right: 1px solid #b3b3b3;
   }
-  
-  .tab {
-    padding: 10px;
-    display: block;
+
+  .tabs-container a {
+    color: #161616;
     text-decoration: none;
-    color: black;
-    background-color: #eee; 
-  }
-  .tab1 {
-    background-color: #ccc;
-    border-bottom: 1px solid red  ;
-  }
-  .tab:hover {
-    background-color: #ddd;
+    background-color: #f3f3f3;
+    padding-right: 20px;;
+    display: inline-block;
+    user-select: none;
+    white-space: nowrap;
   }
   
-  .tab.active { 
-    background-color: red !important;
-    border-bottom: 1px solid #fff;
-  } 
+.tabs-container a.active  {
+      background-color: #e0e0e0;
+      color: #161616;
+      border-bottom: 1px solid #ff4747;
+      font-size: 16px;
+  }
+
+  .tabs-container ul::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tabs-container .left-arrow,
+  .tabs-container .right-arrow {
+    position:absolute;
+    height: 100%;
+    width: 100px;
+    top: 0;
+    display: none;
+    align-items: center;
+  }
+
+  .tabs-container .right-arrow {
+    right: 0;
+    justify-content: flex-end;
+    padding: 0 10px;
+    background-color: linear-gradient(to left, #858585 50%, transparent);
+  }
+  
+  .tabs-container .left-arrow {
+    background-color: linear-gradient(to right, #85858583 50%, transparent);
+  }
+
+  .tabs-container svg:hover {
+    background-color: #f3f3f3;
+  }
+
+
 
   .tabset hr {
     width: 100vw;
@@ -689,6 +812,23 @@ a:hover > .game-site {
     padding-bottom: 24px;
     transition: transform 0.4s ease-in-out;
 }
+
+#card-3{
+  padding-bottom: 12px;
+}
+
+#card-4{
+  padding-bottom: 0px;
+}
+
+#card-5{
+  padding-bottom: 77px;
+}
+
+#card-6{
+  padding-bottom: 22px;
+}
+
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 24px 32px rgba(0, 0, 0, 0.6);
@@ -759,7 +899,93 @@ a:hover > .game-site {
     .title-news {
       margin-top: 50px;
     }
+
+    .tabs-container {
+      display: flex;
+      background-color: #f3f3f3;
+      width: 970px;
+      max-width: 90vw;
+      margin: auto;
+      white-space: nowrap;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tabs-container svg {
+      width: 20px;
+      height: 15px;
+      padding: 8px;
+      cursor: pointer;
+      color: #808080;
+    }
+
+    .tabs-container ul {
+      display: flex;
+      gap: 16px;
+      padding: 20px 0px;
+      margin: 0;
+      list-style: none;
+      overflow-x: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      scroll-behavior: smooth;
+    }
+
+    .tabs-container li {
+      cursor: pointer;
+    }
+
+    .tabs-container a {
+      color: #161616;
+      text-decoration: none;
+      background-color: #f3f3f3;
+      padding-right: 25px;
+      display: inline-block;
+      user-select: none;
+      white-space: nowrap; 
+      text-align: center;
+    }
     
+  .tabs-container a.active  {
+        background-color: #e0e0e0;
+        color: #161616;
+        border-bottom: 1px solid #ff4747;
+    }
+
+    .tabs-container ul::-webkit-scrollbar {
+      display: none;
+    }
+
+    .tabs-container .left-arrow,
+    .tabs-container .right-arrow {
+      position:absolute;
+      height: 100%;
+      width: 100px;
+      top: 0;
+      display: none;
+      align-items: center;
+    }
+
+
+    .tabs-container .right-arrow.active,
+    .tabs-container .left-arrow.active {
+      display: flex;
+    }
+
+    .tabs-container .right-arrow {
+      right: 0;
+      justify-content: flex-end;
+      padding: 0 10px;
+      background: linear-gradient(to left, #f3f3f3 50%, transparent);
+    }
+    
+    .tabs-container .left-arrow {
+      background: linear-gradient(to right, #f3f3f3 50%, transparent);
+    }
+
+   
+
+
     .card-container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -985,7 +1211,7 @@ a:hover > .game-site {
     color: black;
     }
   }
-  
+
   .btn:hover {
     padding: 16px 24px;
   }
@@ -994,8 +1220,14 @@ a:hover > .game-site {
     margin-bottom: 100px !important;
   }
 
+  .div-btn {
+    width: 100% !important;
+  }
+
+
 }
 }
+
 
 
 /*---End Modulo 3---*/
