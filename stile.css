@@ -112,7 +112,7 @@ h2 {
 .container {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 60vh;
   overflow: hidden;
 }
 
@@ -140,6 +140,17 @@ h2 {
   text-align: center;
   color: white;
   padding-right: 50px; /* Adjust the padding as needed */
+}
+
+@media (max-width: 960px) {
+  .overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Aligns the content to the right */
+    text-align: center;
+    color: white;
+    padding-right: 50px; /* Adjust the padding as needed */
+  }
 }
 
 .content {
